@@ -1,8 +1,5 @@
 <template>
     <div class="right-container">
-        <img alt="Vue logo" src="../../assets/塔什干.png" />
-        <br>
-
         <Todolist :list="changeList" class="mt-2"></Todolist>
         <TodoButtom v-model:active="activeBtnIndex"></TodoButtom>
         <Todoinput @add="onaddtask" class="input"></Todoinput>        
@@ -66,6 +63,7 @@ export default {
     justify-content: center;
     width: 100%;
     background-color: #ccc;
+    opacity: .5;
 }
 .input{
     display: flex;

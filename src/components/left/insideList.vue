@@ -1,6 +1,18 @@
 <template>
     <div class="">
-        内置列表
+        <ul>
+            <li>
+                <div>
+                    <i>iconfont</i>
+                    <span>
+                        text
+                    </span>
+                    <span>
+                        number
+                    </span>
+                </div>
+            </li>
+        </ul>
     </div>
 </template>
 

@@ -25,7 +25,6 @@ export default {
     width: 200px;
     height: 100%;
     text-align: center;
-    line-height: 100px;
     background-color: aquamarine;
 }
 
@@ -35,6 +34,7 @@ export default {
     background-color: aliceblue;
 }
 .search{
+    justify-content: space-between;
     width: 200px;
     height: 100px;
     background-color: skyblue;

@@ -1,8 +1,11 @@
 <template>
     <div class="right-container">
-        <Todolist :list="changeList" class="mt-2"></Todolist>
-        <TodoButtom v-model:active="activeBtnIndex"></TodoButtom>
-        <Todoinput @add="onaddtask" class="input"></Todoinput>        
+        <ListHeader class="listheader"></ListHeader>
+        <div class="middle">
+            <Todolist class="list mt-2" :list="changeList"></Todolist>
+            <TodoButtom v-model:active="activeBtnIndex"></TodoButtom>
+        </div>
+        <Todoinput @add="onaddtask" class="input"></Todoinput>
     </div>
 
 </template>
@@ -10,12 +13,14 @@
 <script>
 import Todoinput from './todoinput.vue';
 import Todolist from './todolist.vue';
-import TodoButtom from './TodoButtom.vue';
+import TodoButtom from './ListSwitch.vue';
+import ListHeader from './listHeader.vue';
 export default {
     components: {
         Todoinput,
         Todolist,
-        TodoButtom
+        TodoButtom,
+        ListHeader
     },
     data() {
         return {
@@ -53,28 +58,38 @@ export default {
 }
 </script>
 
-<style lang="less" >
+<style lang="less" scoped>
 .right-container {
-    position: relative;
     flex: 1;
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
     background-color: #ccc;
     opacity: .5;
-}
-.input{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
+    .middle{
+        display: flex;
+        flex: 1;
+    }
 
-img {
-    width: 300px;
+    // .listheader {
+    //     position: absolute;
+    //     top: 0;
+    // }
+
+    // .list {
+    //     flex: 1;
+    //     margin-top: 50px;
+    // }
+
+    // .input {
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     position: absolute;
+    //     bottom: 0;
+    //     width: 100%;
+    // }
 }
 </style>

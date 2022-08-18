@@ -1,6 +1,6 @@
 <template>
-    <div class="">
-        搜索
+    <div class="search">
+        <input type="text">
     </div>
 </template>
 
@@ -10,6 +10,13 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="less" scoped>
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    input {
+        flex: 1;
+    }
+}
 </style>

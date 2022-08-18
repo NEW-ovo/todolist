@@ -1,7 +1,16 @@
 <template>
     <div class="new">
-        <div class="newList">新列表</div>
-        <div class="newGroup"></div>
+        <div class="newList">
+            <i>
+                icon
+            </i>
+            <span>
+                text
+            </span>
+        </div>
+        <div class="newGroup">
+            icon
+        </div>
     </div>
 </template>
 

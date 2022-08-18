@@ -1,6 +1,20 @@
 <template>
     <div class="">
-        自定义列表
+        <div class="">
+            <ul>
+                <li>
+                    <div>
+                        <i>iconfont</i>
+                        <span>
+                            text
+                        </span>
+                        <span>
+                            number
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
 </template>
 
@@ -11,5 +25,4 @@ export default {
 </script>
 
 <style>
-
 </style>

@@ -1,8 +1,8 @@
 
 <template>
     <div class="container">
-        <ul class="list-group col-md-4 offset-md-4 col-sm-1">
-            <li class="list-group-item d-flex justify-content-between align-items-center" v-for="item in list"
+        <ul class="list-group ">
+            <li class="item list-group-item  " v-for="item in list"
                 :key="item.id">
                 <div class="custom-control custom-checkbox">
                     <input type="checkbox" class="custom-control-input" :id="item.id" v-model="item.done">
@@ -22,17 +22,27 @@
 <script>
 export default {
     name: 'ToDoList',
-    // props: {
-    //     list: {
-    //         type: Array,
-    //         require: true,
-    //         default: [],
-    //     }
-    // }
+    props: {
+        list: {
+            type: Array,
+            require: true,
+            default: [],
+        }
+    }
 }
 </script>
 
 <style lang="less" scoped>
+ul{
+    display: flex;
+    width: 100%;
+    .item{
+        flex: 1;
+        height: 55px;
+        
+    }
+}
+
 .delete {
     text-decoration: line-through;
     color: gray;

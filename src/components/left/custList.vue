@@ -1,20 +1,20 @@
 <template>
     <div class="">
-        <div class="">
-            <ul>
-                <li>
+        <ul>
+            <li>
+                <div>
                     <div>
                         <i>iconfont</i>
                         <span>
                             text
                         </span>
-                        <span>
-                            number
-                        </span>
                     </div>
-                </li>
-            </ul>
-        </div>
+                    <span>
+                        number
+                    </span>
+                </div>
+            </li>
+        </ul>
     </div>
 </template>
 
@@ -24,5 +24,9 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less" scoped>
+li div {
+    display: flex;
+    justify-content: space-between;
+}
 </style>

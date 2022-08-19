@@ -1,10 +1,8 @@
 <template>
     <div class="right-container">
         <ListHeader class="listheader"></ListHeader>
-        <div class="middle">
-            <Todolist class="list mt-2" :list="changeList"></Todolist>
-            <TodoButtom v-model:active="activeBtnIndex"></TodoButtom>
-        </div>
+        <Todolist class="list mt-2" :list="changeList"></Todolist>
+        <!-- <TodoButtom v-model:active="activeBtnIndex"></TodoButtom> -->
         <Todoinput @add="onaddtask" class="input"></Todoinput>
     </div>
 
@@ -68,28 +66,34 @@ export default {
     width: 100%;
     background-color: #ccc;
     opacity: .5;
-    .middle{
+
+    .listheader {
+        height: 100px;
+        top: 0;
+        background-color: teal;
+    }
+
+    .list {
         display: flex;
+        width: 100%;
         flex: 1;
     }
 
-    // .listheader {
-    //     position: absolute;
-    //     top: 0;
-    // }
+    .input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        background-color: bisque;
+    }
 
     // .list {
     //     flex: 1;
     //     margin-top: 50px;
     // }
 
-    // .input {
-    //     display: flex;
-    //     align-items: center;
-    //     justify-content: center;
-    //     position: absolute;
-    //     bottom: 0;
-    //     width: 100%;
-    // }
+
 }
 </style>

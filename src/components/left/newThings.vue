@@ -20,17 +20,25 @@ export default {
 }
 </script>
 
-<style>
-.new{
+<style lang="less" scoped>
+.new {
     display: flex;
-}
-.newList{
-    width: 80%;
-    height: 100%;
-}
-.newGroup{
-    width: 20%;
-    height: 100%;
-    background-color: yellowgreen;
+
+    .newList {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        width: 80%;
+        height: 100%;
+    }
+
+    .newGroup {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20%;
+        height: 100%;
+        background-color: yellowgreen;
+    }
 }
 </style>

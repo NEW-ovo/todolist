@@ -30,30 +30,30 @@ export default {
 
 .use{
     width: 200px;
-    height: 100px;
+    height: 50px;
     background-color: aliceblue;
 }
 .search{
     justify-content: space-between;
     width: 200px;
-    height: 100px;
+    height: 50px;
     background-color: skyblue;
 }
 .insidelist{
     width: 200px;
-    height: 100px;
+    height: 40px;
     background-color: aliceblue;
 }
 .custlist{
     width: 200px;
-    height: 100px;
+    height: 40px;
     background-color: skyblue;
 }
 .newgroup{
     position: absolute;
     bottom: 0;
     width: 200px;
-    height: 100px;
+    height: 40px;
     background-color: skyblue;
 }
 </style>

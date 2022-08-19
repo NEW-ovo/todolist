@@ -1,6 +1,6 @@
 <template>
     <div class="search">
-        <input type="text">
+            <input class="input" type="text">
     </div>
 </template>
 
@@ -11,12 +11,16 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.search{
+.search {
     display: flex;
     align-items: center;
     justify-content: center;
-    input {
-        flex: 1;
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+        .input {
+            width: 100%;
     }
+
 }
 </style>

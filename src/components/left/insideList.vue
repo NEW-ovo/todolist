@@ -3,10 +3,12 @@
         <ul>
             <li>
                 <div>
-                    <i>iconfont</i>
-                    <span>
-                        text
-                    </span>
+                    <div>
+                        <i>iconfont</i>
+                        <span>
+                            text
+                        </span>
+                    </div>
                     <span>
                         number
                     </span>
@@ -22,6 +24,9 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="less" scoped>
+li div {
+    display: flex;
+    justify-content: space-between;
+}
 </style>

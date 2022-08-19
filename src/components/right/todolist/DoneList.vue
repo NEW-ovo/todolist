@@ -1,6 +1,5 @@
-
 <template>
-    <div class="container">
+      <div class="container">
         <ul class="list-group ">
             <li class="item list-group-item  " v-for="item in list"
                 :key="item.id">
@@ -16,36 +15,14 @@
             </li>
         </ul>
     </div>
-
 </template>
 
 <script>
 export default {
-    name: 'ToDoList',
-    props: {
-        list: {
-            type: Array,
-            require: true,
-            default: [],
-        }
-    }
+
 }
 </script>
 
-<style lang="less" scoped>
-ul{
-    display: flex;
-    width: 100%;
-    .item{
-        flex: 1;
-        height: 55px;
-        
-    }
-}
+<style>
 
-.delete {
-    text-decoration: line-through;
-    color: gray;
-    font-style: italic;
-}
 </style>

@@ -10,7 +10,7 @@
 
 <script>
 import Todoinput from './todoinput.vue';
-import Todolist from './todolist.vue';
+import Todolist from './todolist/todolist.vue';
 import TodoButtom from './ListSwitch.vue';
 import ListHeader from './listHeader.vue';
 export default {

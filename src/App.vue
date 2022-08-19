@@ -6,10 +6,8 @@
 </template>
 
 <script>
-
 import LeftRoot from "./components/left/leftRoot.vue";
 import RightRoot from "./components/right/rightRoot.vue";
-
 
 export default {
     components: {

@@ -31,18 +31,16 @@ export default {
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background-color: skyblue;
+
 
     .donelist {
         width: 100%;
         height: 50px;
-        background-color: #ccc;
     }
 
     .undonglist {
         width: 100%;
         height: 100px;
-        background-color: purple;
     }
 }
 

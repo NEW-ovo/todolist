@@ -1,7 +1,10 @@
 <template>
     <div class="listheader-container">
-        <div class="left">text</div>
-        <div class="right">setting</div>
+        <div class="left">
+            <span>inner list icon</span>
+            <div>list name</div>
+        </div>
+        <div class="iconfont icon-gengduo"></div>
     </div>
 </template>
 
@@ -18,5 +21,8 @@ export default {
     justify-content: space-between;
     width: 100%;
     height: 50px;
+    .left{
+        display: flex;
+    }
 }
 </style>

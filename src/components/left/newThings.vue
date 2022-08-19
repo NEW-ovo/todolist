@@ -1,15 +1,13 @@
 <template>
     <div class="new">
         <div class="newList">
-            <i>
-                icon
-            </i>
+            <span class="iconfont icon-jiahao1">
+            </span>
             <span>
-                text
+                   新建列表
             </span>
         </div>
-        <div class="newGroup">
-            icon
+        <div class="newGroup iconfont icon-fenzu">
         </div>
     </div>
 </template>
@@ -38,7 +36,6 @@ export default {
         justify-content: center;
         width: 20%;
         height: 100%;
-        background-color: yellowgreen;
     }
 }
 </style>

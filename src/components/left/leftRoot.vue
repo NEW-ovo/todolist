@@ -1,59 +1,42 @@
 <template>
     <div class="left-container">
-        <Use class="use"></Use>
-        <Search class="search"></Search>
-        <InsideList class="insidelist"></InsideList>
-        <CustList class="custlist"></CustList>
+        <UseSearch class="useSearch"></UseSearch>
+        <AllList class="allList"></AllList>
         <NewGroup class="newgroup"></NewGroup>
     </div>
 </template>
 
 <script>
-import Use from './use.vue';
-import Search from './search.vue';
-import InsideList from './insideList.vue';
-import CustList from './custList.vue';
 import NewGroup from './newThings.vue';
+import AllList from './alllList/AllList.vue';
+import UseSearch from './useSearch/useSearch.vue';
 export default {
     name: "LeftRoot",
-    components: { Use, Search, InsideList, CustList, NewGroup }
+    components: {
+        UseSearch,
+        NewGroup,
+        AllList,
+    } ,
 }
+
 </script>
 
 <style lang="less" scoped>
 .left-container {
-    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
     height: 100%;
     text-align: center;
-    background-color: aquamarine;
-}
-
-.use{
-    width: 200px;
-    height: 50px;
-    background-color: aliceblue;
-}
-.search{
-    justify-content: space-between;
-    width: 200px;
-    height: 50px;
-    background-color: skyblue;
-}
-.insidelist{
-    width: 200px;
-    height: 40px;
-    background-color: aliceblue;
-}
-.custlist{
-    width: 200px;
-    height: 40px;
-    background-color: skyblue;
-}
-.newgroup{
-    position: absolute;
-    bottom: 0;
-    width: 200px;
-    height: 40px;
-    background-color: skyblue;
+    background-color: #f3f3f3;
+    .allList{
+        flex: 1;
+        margin-top: 50px;
+    }
+    .useSearch{
+        width: 100%;
+        height: 50px;
+    }
 }
 </style>

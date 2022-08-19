@@ -38,12 +38,10 @@ export default {
     .undone-drop-down-button {
         width: 100px;
         height: 30px;
-        background-color: #fff;
     }
     .container{
         width: 100%;
         height: 50px;
-        background-color: #fff;
     }
 }
 </style>

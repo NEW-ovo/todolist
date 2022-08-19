@@ -1,0 +1,9 @@
+{
+    "include": [
+        "./src/*"
+    ],
+    "experimentalDisableTemplateSupport": true,
+    "compilerOptions":{
+        "jsx": "preserve"
+    }
+}

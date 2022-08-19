@@ -64,19 +64,10 @@ export default {
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    background-color: #ccc;
-    opacity: .5;
 
     .listheader {
-        height: 100px;
         top: 0;
-        background-color: teal;
-    }
-
-    .list {
-        display: flex;
-        width: 100%;
-        flex: 1;
+        height: 100px;
     }
 
     .input {
@@ -86,14 +77,6 @@ export default {
         bottom: 0;
         width: 100%;
         height: 50px;
-        background-color: bisque;
     }
-
-    // .list {
-    //     flex: 1;
-    //     margin-top: 50px;
-    // }
-
-
 }
 </style>

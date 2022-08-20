@@ -1,25 +1,26 @@
 <template>
     <div class="left-container">
-        <UseSearch class="useSearch"></UseSearch>
+        <Use></Use>
+        <Search></Search>
         <ElList class="allList"></ElList>
-        <!-- <AllList class="allList"></AllList> -->
         <NewGroup class="newgroup"></NewGroup>
     </div>
 </template>
 
 <script>
 import NewGroup from './newThings.vue';
-import AllList from './alllList/AllList.vue';
-import UseSearch from './useSearch/useSearch.vue';
-import ElList from './alllList/elList.vue';
+import ElList from './elList.vue';
+import Use from './use.vue';
+import Search from './search.vue';
+
 export default {
     name: "LeftRoot",
     components: {
-    UseSearch,
-    NewGroup,
-    AllList,
-    ElList
-} ,
+        NewGroup,
+        ElList,
+        Use,
+        Search
+    },
 }
 
 </script>
@@ -33,11 +34,12 @@ export default {
     height: 100%;
     text-align: center;
     background-color: #f3f3f3;
-    .allList{
+
+    .allList {
         flex: 1;
-        margin-top: 50px;
     }
-    .useSearch{
+
+    .useSearch {
         width: 100%;
         height: 50px;
     }

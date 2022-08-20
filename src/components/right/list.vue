@@ -29,35 +29,23 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.list-container {
+.list-group {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
-
-
-    .donelist {
-        width: 100%;
-        height: 50px;
-    }
-
-    .undonglist {
-        width: 100%;
-        height: 100px;
-    }
-}
-
-ul {
-    display: flex;
-    width: 100%;
-
     .item {
         display: flex;
+        align-items: center;
         justify-content: space-between;
         height: 55px;
-
+        background-color: #eeeff3;
+        margin: 3px;
+        border-radius: 10px;
     }
 }
+
+
 
 .delete {
     text-decoration: line-through;

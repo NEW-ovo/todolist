@@ -1,9 +1,13 @@
 <template>
-    <div class="right-container">
+    <el-header>
         <ListHeader class="listheader"></ListHeader>
+    </el-header>
+    <el-main>
         <List class="list" :list="list"></List>
+    </el-main>
+    <el-footer>
         <Todoinput @add="onaddtask" class="input"></Todoinput>
-    </div>
+    </el-footer>
 </template>
 
 <script>
@@ -54,28 +58,23 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.right-container {
-    flex: 1;
+.el-header {
     display: flex;
     align-items: center;
-    flex-direction: column;
     justify-content: space-between;
-    margin: 50px;
+}
 
+.listheader {
+    top: 0;
+    height: 100px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
     width: 100%;
-
-    .listheader {
-        top: 0;
-        height: 100px;
-    }
-
-    .input {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        bottom: 0;
-        width: 100%;
-        height: 50px;
-    }
+    height: 50px;
 }
 </style>

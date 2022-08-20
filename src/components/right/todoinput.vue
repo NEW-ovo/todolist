@@ -1,19 +1,17 @@
 <template>
-    <div class="">
-        <form class="form-inline" @submit.prevent="onsubmit">
-                <div class="input-group-prepend">
-                    <div class="input-group-text">task</div>
-                    <input type="text" class="form-control" placeholder="曹桑" v-model.trim="taskname">
-                </div>
-            <div>
-                <button type="submit" class="btn btn-primary mb-2" >New</button>
-            </div>
-        </form>
-    </div>
-
+  <div class="demo-input-suffix search-container">
+        <el-icon><Plus /></el-icon>
+      <el-input v-model="input2"  placeholder="Search" :prefix-icon="Search" />
+  </div>
 </template>
 
-<script>
+<script setup lang="ts">
+import { ref } from 'vue'
+import { Calendar, Search } from '@element-plus/icons-vue'
+const input1 = ref('')
+const input2 = ref('')
+const input3 = ref('')
+const input4 = ref('')
 export default {
     name: 'ToDoInput',
     emits: ['add',],
@@ -33,12 +31,36 @@ export default {
 
 </script>
 
+
+
 <style lang="less" scoped>
-form {
+.container{
+    width: 100%;
+    height: 50px;
+}
+.search {
+    position: relative;
     display: flex;
-    flex-wrap: nowrap;
-    .form-control{
-        flex: 1;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    padding: 0 15px;
+
+    .iconfont {
+        position: absolute;
+        right: 15px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
     }
+
+    .input {
+        width: 100%;
+        border-radius: 5px;
+    }
+
 }
 </style>

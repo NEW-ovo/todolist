@@ -1,43 +1,46 @@
 <template>
     <div class="common-layout">
-        <el-container class="body-container">
-            <el-aside width="300px" class="aside">
+        <el-container>
+            <el-aside width="300px">
                 <LeftRoot></LeftRoot>
             </el-aside>
-            <el-container>
-                <el-header>
-                    <ListHeader></ListHeader>
-                </el-header>
-                <el-main>
-                    <List></List>
-                    <Todoinput></Todoinput>
-                </el-main>
+            <el-container class="el-container-right">
+                <RightRoot></RightRoot>
             </el-container>
         </el-container>
     </div>
 </template>
 
-<script>
-import LeftRoot from "./components/left/leftRoot.vue";
-import RightRoot from "./components/right/rightRoot.vue";
-import ListHeader from "./components/right/listHeader.vue";
-import List from "./components/right/list.vue";
-import Todoinput from "./components/right/todoinput.vue";
 
+<script>
+import LeftRoot from './components/left/leftRoot.vue';
+import RightRoot from './components/right/rightRoot.vue';
 export default {
     components: {
-    LeftRoot,
-    RightRoot,
-    ListHeader,
-    List,
-    Todoinput
-},
+        LeftRoot,
+        RightRoot
+    },
     name: 'App',
 
 }
 </script>
 
 <style lang="less" scoped>
+.common-layout {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+
+    .el-aside {
+        overflow-x: hidden;
+    }
+    .el-container-right{
+        flex-direction: column;
+        background-color: #697dcd;
+    }
+
+}
 
 // .body-container{
 //      width: 100vw;

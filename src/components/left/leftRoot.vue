@@ -1,7 +1,8 @@
 <template>
     <div class="left-container">
         <UseSearch class="useSearch"></UseSearch>
-        <AllList class="allList"></AllList>
+        <ElList class="allList"></ElList>
+        <!-- <AllList class="allList"></AllList> -->
         <NewGroup class="newgroup"></NewGroup>
     </div>
 </template>
@@ -10,13 +11,15 @@
 import NewGroup from './newThings.vue';
 import AllList from './alllList/AllList.vue';
 import UseSearch from './useSearch/useSearch.vue';
+import ElList from './alllList/elList.vue';
 export default {
     name: "LeftRoot",
     components: {
-        UseSearch,
-        NewGroup,
-        AllList,
-    } ,
+    UseSearch,
+    NewGroup,
+    AllList,
+    ElList
+} ,
 }
 
 </script>

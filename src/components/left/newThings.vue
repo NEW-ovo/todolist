@@ -1,15 +1,16 @@
 <template>
-    <div class="new">
-        <div class="newList">
-            <span class="iconfont icon-jiahao1">
-            </span>
-            <span>
-                   新建列表
-            </span>
-        </div>
-        <div class="newGroup iconfont icon-fenzu">
-        </div>
-    </div>
+    <el-row class="tac">
+        <el-col :span="24">
+            <el-menu class="el-menu-vertical-demo" >
+                <el-menu-item index="4">
+                    <el-icon>
+                        <Plus />
+                    </el-icon>
+                    <span>新建列表</span>
+                </el-menu-item>
+            </el-menu>
+        </el-col>
+    </el-row>
 </template>
 
 <script>

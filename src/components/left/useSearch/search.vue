@@ -1,18 +1,25 @@
 <template>
-    <div class="container">
-        <div class="search">
-            <input class="input" type="text" placeholder="Search">
-            <span class="iconfont icon-sousuo"></span>
-        </div>
-    </div>
-
+  <div class="demo-input-suffix">
+    <el-row :gutter="20">
+      <el-input
+        v-model="input2"
+        class="w-50 m-2"
+        placeholder="Search"
+        :prefix-icon="Search"
+      />
+    </el-row>
+  </div>
 </template>
 
-<script>
-export default {
-
-}
+<script setup lang="ts">
+import { ref } from 'vue'
+import { Calendar, Search } from '@element-plus/icons-vue'
+const input1 = ref('')
+const input2 = ref('')
+const input3 = ref('')
+const input4 = ref('')
 </script>
+
 
 <style lang="less" scoped>
 .container{

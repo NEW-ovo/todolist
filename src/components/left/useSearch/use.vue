@@ -4,7 +4,7 @@
             <span class="iconfont icon-wo"></span>
         </div>
         <div class="useInfo">
-            <span><strong>曹力鹏</strong> </span>
+            <span><strong>曹力鹏{{this.$slots}}</strong> </span>
             <span>839106773@qq.com <span class="iconfont icon-shangxiazhankai_o
 "></span></span>
         </div>
@@ -22,7 +22,7 @@ export default {
 .use {
     display: flex;
     flex-direction: row;
-    justify-content:start;
+    justify-content: start;
 
     .headPhoto {
         display: flex;
@@ -35,10 +35,11 @@ export default {
             display: block;
             width: 50px;
             height: 50px;
-            // text-align:center;
+            color: #fff;
             line-height: 50px;
             border: 1px solid #000;
             border-radius: 50%;
+            background-color: #2d89ef;
         }
     }
 
@@ -54,7 +55,8 @@ export default {
             height: 50%;
         }
     }
-    .null{
+
+    .null {
         flex: 1;
     }
 }

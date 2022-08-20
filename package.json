@@ -6,7 +6,10 @@
     "build": "vite build"
   },
   "dependencies": {
-    "vue": "^3.0.4"
+    "pinia": "^2.0.20",
+    "react-router-dom": "^6.3.0",
+    "vue": "^3.0.4",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@vue/compiler-sfc": "^3.0.4",

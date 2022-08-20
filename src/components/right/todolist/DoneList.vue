@@ -19,7 +19,13 @@
 
 <script>
 export default {
-
+    props: {
+        list: {
+            type: Array,
+            require: true,
+            default: [],
+        }
+    }
 }
 </script>
 

@@ -1,25 +1,26 @@
 
 <template>
     <div class="list-container">
-        <DoneList class="donelist"></DoneList>
-        <UndoneList class="undonglist"></UndoneList>
+        <DoneList class="donelist" :list="todolist" ></DoneList>
     </div>
 </template>
 
 <script>
-import UndoneList from './UndoneList.vue';
 import DoneList from './DoneList.vue';
 export default {
     name: "ToDoList",
-    props: {
-        list: {
-            type: Array,
-            require: true,
-            default: [],
+    data() {
+        return {
+            todolist: [
+                { id: 1, task: '周一早晨9点开会', done: false },
+                { id: 2, task: '周一晚上8点聚餐', done: false },
+                { id: 3, task: '准备周三上午的演讲稿', done: true },
+            ].reverse(),
+            nextid: 4,
+            activeBtnIndex: 0,
         }
     },
     components: {
-        UndoneList,
         DoneList
     }
 }

@@ -1,36 +1,22 @@
 <template>
     <div class="right-container">
         <ListHeader class="listheader"></ListHeader>
-        <Todolist class="list mt-2" :list="changeList"></Todolist>
-        <!-- <TodoButtom v-model:active="activeBtnIndex"></TodoButtom> -->
+        <Todolist class="list" ></Todolist>
         <Todoinput @add="onaddtask" class="input"></Todoinput>
     </div>
-
 </template>
 
 <script>
 import Todoinput from './todoinput.vue';
 import Todolist from './todolist/todolist.vue';
-import TodoButtom from './ListSwitch.vue';
 import ListHeader from './listHeader.vue';
 export default {
     components: {
         Todoinput,
         Todolist,
-        TodoButtom,
         ListHeader
     },
-    data() {
-        return {
-            todolist: [
-                { id: 1, task: '周一早晨9点开会', done: false },
-                { id: 2, task: '周一晚上8点聚餐', done: false },
-                { id: 3, task: '准备周三上午的演讲稿', done: true },
-            ].reverse(),
-            nextid: 4,
-            activeBtnIndex: 0,
-        }
-    },
+
     computed: {
         changeList() {
             switch (this.activeBtnIndex) {

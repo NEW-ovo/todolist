@@ -2,16 +2,14 @@
     <div class="listheader-container">
         <div class="left">
             <span>inner list icon</span>
-            <div>list name</div>
+            <div>list</div>
         </div>
         <div class="iconfont icon-gengduo"></div>
     </div>
 </template>
 
-<script>
-export default {
+<script >
 
-}
 </script>
 
 <style lang="less" scoped>

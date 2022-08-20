@@ -15,11 +15,12 @@ export default {
         RightRoot
     },
     name: 'App',
+
 }
 </script>
 
 <style lang="less" scoped>
-.page{
+.page {
     display: flex;
     width: 100vw;
     height: 100vh;

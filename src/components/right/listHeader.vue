@@ -1,8 +1,7 @@
 <template>
     <div class="listheader-container">
         <div class="left">
-            <span>inner list icon</span>
-            <div>list</div>
+            <span><strong>我的一天</strong> </span>
         </div>
         <div class="iconfont icon-gengduo"></div>
     </div>
@@ -19,6 +18,8 @@
     justify-content: space-between;
     width: 100%;
     height: 50px;
+    color: #fff;
+    font-size: larger;
     .left{
         display: flex;
     }

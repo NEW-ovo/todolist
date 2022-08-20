@@ -5,9 +5,8 @@
                     <div class="input-group-text">task</div>
                     <input type="text" class="form-control" placeholder="曹桑" v-model.trim="taskname">
                 </div>
-
             <div>
-                <button type="submit" class="btn btn-primary mb-2">New</button>
+                <button type="submit" class="btn btn-primary mb-2" >New</button>
             </div>
         </form>
     </div>

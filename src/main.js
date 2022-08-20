@@ -1,8 +1,9 @@
 import { createApp } from 'vue'
 import { createStore } from 'vuex'
 import App from './App.vue'
-import './index.css'
-import './assets/css/bootstrap.css'
+import ElementPlus from 'element-plus'
+import zhCn from 'element-plus/es/locale/lang/zh-cn'
+import 'element-plus/dist/index.css'
 import './assets/iconfont/iconfont.css'
 
 const app = createApp(App)
@@ -25,5 +26,7 @@ store.commit('increment')
 console.log(store.state.count) // -> 1
 // 将 store 实例作为插件安装
 app.use(store)
-
+app.use(ElementPlus, {
+    locale: zhCn,
+  })
 app.mount('#app')

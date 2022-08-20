@@ -4,7 +4,7 @@
             <span class="iconfont icon-wo"></span>
         </div>
         <div class="useInfo">
-            <span><strong>曹力鹏{{this.$slots}}</strong> </span>
+            <span><strong>曹力鹏</strong> </span>
             <span>839106773@qq.com <span class="iconfont icon-shangxiazhankai_o
 "></span></span>
         </div>

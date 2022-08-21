@@ -2,11 +2,13 @@
     <el-header>
         <ListHeader class="listheader"></ListHeader>
     </el-header>
-    <el-main>
-        <List  :list="list"></List>
-    </el-main>
+    <el-scrollbar>
+        <el-main>
+            <List :list="list"></List>
+        </el-main>
+    </el-scrollbar>
     <el-footer>
-        <Input></Input>
+        <Input @add="onAddNewTask"></Input>
     </el-footer>
 </template>
 
@@ -16,18 +18,27 @@ import List from './list.vue';
 import Input from './input.vue';
 export default {
     components: {
-    ListHeader,
-    List,
-    Input
-},
+        ListHeader,
+        List,
+        Input
+    },
     data() {
         return {
             list: [
                 { id: 1, task: '周一早晨9点开会', done: false },
                 { id: 2, task: '周一晚上8点聚餐', done: false },
                 { id: 3, task: '准备周三上午的演讲稿', done: true },
+                { id: 4, task: '周一早晨9点开会', done: false },
+                { id: 5, task: '周一晚上8点聚餐', done: false },
+                { id: 6, task: '准备周三上午的演讲稿', done: true },
+                { id: 7, task: '周一早晨9点开会', done: false },
+                { id: 8, task: '周一晚上8点聚餐', done: false },
+                { id: 9, task: '准备周三上午的演讲稿', done: true },
+                { id: 10, task: '周一早晨9点开会', done: false },
+                { id: 11, task: '周一晚上8点聚餐', done: false },
+                { id: 12, task: '准备周三上午的演讲稿', done: true },
             ].reverse(),
-            nextid: 4,
+            nextid: 13,
             activeBtnIndex: 0,
         }
     },
@@ -45,8 +56,8 @@ export default {
         }
     },
     methods: {
-        onaddtask(taskname) {
-            this.todolist.unshift({
+        onAddNewTask(taskname) {
+            this.list.unshift({
                 id: this.nextid,
                 task: taskname,
                 done: false,
@@ -64,5 +75,4 @@ export default {
     justify-content: space-between;
     color: #fff;
 }
-
 </style>

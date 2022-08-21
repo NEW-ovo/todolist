@@ -2,7 +2,9 @@
     <div class="left-container">
         <Use></Use>
         <Search></Search>
-        <ElList class="allList"></ElList>
+        <el-scrollbar>
+            <ElList class="allList"></ElList>
+        </el-scrollbar>
         <NewGroup class="newgroup"></NewGroup>
     </div>
 </template>

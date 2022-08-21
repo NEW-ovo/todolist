@@ -2,13 +2,15 @@
 <template>
     <div class="container">
         <ul class="list-group ">
-            <li class="item list-group-item  " v-for="item in list" :key="item.id">
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" :id="item.id" v-model="item.done">
-                    <label class="custom-control-label" :class="item.done ? 'delete' : ''" :for="item.id">{{ item.task
-                    }}</label>
-                </div>
-            </li>
+
+                <li class="item list-group-item  " v-for="item in list" :key="item.id">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" :id="item.id" v-model="item.done">
+                        <label class="custom-control-label" :class="item.done ? 'delete' : ''" :for="item.id">{{
+                                item.task
+                        }}</label>
+                    </div>
+                </li>
         </ul>
     </div>
 </template>
@@ -34,6 +36,7 @@ export default {
     flex-direction: column;
     width: 100%;
     height: 100%;
+
     .item {
         display: flex;
         align-items: center;
@@ -44,8 +47,6 @@ export default {
         border-radius: 10px;
     }
 }
-
-
 
 .delete {
     text-decoration: line-through;

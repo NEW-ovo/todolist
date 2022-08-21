@@ -2,34 +2,22 @@
 <template>
     <div class="container">
         <ul class="list-group ">
-
-                <li class="item list-group-item  " v-for="item in list" :key="item.id">
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" :id="item.id" v-model="item.done">
-                        <label class="custom-control-label" :class="item.done ? 'delete' : ''" :for="item.id">{{
-                                item.task
-                        }}</label>
-                    </div>
-                </li>
+            <li class="item list-group-item  " v-for="item in userStore.list" :key="item.id">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" :id='String(item.id)' v-model="item.done">
+                    <label class="custom-control-label" :class="item.done ? 'delete' : ''" :for='String(item.id)'>{{
+                            item.task
+                    }}</label>
+                </div>
+            </li>
         </ul>
     </div>
 </template>
+<script lang="ts" setup>
+import { useUserStore } from '../../stores/list'
 
-<script>
-export default {
-    name: "List",
-    props: {
-        // 列表数据
-        list: {
-            type: Array,
-            required: true,
-            default: [],
-        },
-    },
-
-}
+const userStore = useUserStore()
 </script>
-
 <style lang="less" scoped>
 .list-group {
     display: flex;

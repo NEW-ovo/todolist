@@ -20,77 +20,10 @@
                     </el-icon>
                     <span>已完成</span>
                 </el-menu-item>
-                <el-menu-item index="3">
-                    <el-icon>
-                        <document />
-                    </el-icon>
-                    <span>全部</span>
-                </el-menu-item>
-                <el-menu-item index="4">
-                    <el-icon>
-                        <Checked />
-                    </el-icon>
-                    <span>已完成</span>
-                </el-menu-item>
-                <el-menu-item index="3">
-                    <el-icon>
-                        <document />
-                    </el-icon>
-                    <span>全部</span>
-                </el-menu-item>
-                <el-menu-item index="4">
-                    <el-icon>
-                        <Checked />
-                    </el-icon>
-                    <span>已完成</span>
-                </el-menu-item>
-                <el-menu-item index="3">
-                    <el-icon>
-                        <document />
-                    </el-icon>
-                    <span>全部</span>
-                </el-menu-item>
-                <el-menu-item index="4">
-                    <el-icon>
-                        <Checked />
-                    </el-icon>
-                    <span>已完成</span>
-                </el-menu-item>
-                <el-menu-item index="3">
-                    <el-icon>
-                        <document />
-                    </el-icon>
-                    <span>全部</span>
-                </el-menu-item>
-                <el-menu-item index="4">
-                    <el-icon>
-                        <Checked />
-                    </el-icon>
-                    <span>已完成</span>
-                </el-menu-item>
-                <el-menu-item index="3">
-                    <el-icon>
-                        <document />
-                    </el-icon>
-                    <span>全部</span>
-                </el-menu-item>
-                <el-menu-item index="4">
-                    <el-icon>
-                        <Checked />
-                    </el-icon>
-                    <span>已完成</span>
-                </el-menu-item>
             </el-menu>
         </el-col>
     </el-row>
 </template>
 
 <script lang="ts" setup>
-import {
-    Document,
-    Menu as IconMenu,
-    Location,
-    Setting,
-} from '@element-plus/icons-vue'
-
 </script>

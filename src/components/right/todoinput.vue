@@ -1,17 +1,18 @@
 <template>
-  <div class="demo-input-suffix search-container">
-        <el-icon><Plus /></el-icon>
-      <el-input v-model="input2"  placeholder="Search" :prefix-icon="Search" />
-  </div>
+    <el-form @submit.prevent="onFormSubmit">
+        <el-form-item>
+            <el-input class="w-50 m-2" placeholder="添加任务" v-model.trim="taskname">
+                <template #prefix>
+                    <el-icon class="el-input__icon">
+                        <search />
+                    </el-icon>
+                </template>
+            </el-input>
+        </el-form-item>
+    </el-form>
 </template>
 
-<script setup lang="ts">
-import { ref } from 'vue'
-import { Calendar, Search } from '@element-plus/icons-vue'
-const input1 = ref('')
-const input2 = ref('')
-const input3 = ref('')
-const input4 = ref('')
+<script >
 export default {
     name: 'ToDoInput',
     emits: ['add',],
@@ -21,46 +22,20 @@ export default {
         }
     },
     methods: {
-        onsubmit() {
-            if (!this.taskname) return alert('say some')
+        // 表单提交的事件处理函数
+        onFormSubmit() {
+            // 1. 判断任务名称是否为空
+            if (!this.taskname) return alert('任务名称不能为空！')
+            // 2. 触发自定义的 add 事件，并向外界传递数据
             this.$emit('add', this.taskname)
+            // 3. 清空文本框
             this.taskname = ''
-        }
-    }
+        },
+    },
+
 }
 
 </script>
 
-
-
 <style lang="less" scoped>
-.container{
-    width: 100%;
-    height: 50px;
-}
-.search {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 100%;
-    height: 50px;
-    padding: 0 15px;
-
-    .iconfont {
-        position: absolute;
-        right: 15px;
-        width: 30px;
-        height: 30px;
-        text-align: center;
-        line-height: 30px;
-    }
-
-    .input {
-        width: 100%;
-        border-radius: 5px;
-    }
-
-}
 </style>

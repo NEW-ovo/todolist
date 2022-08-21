@@ -3,23 +3,23 @@
         <ListHeader class="listheader"></ListHeader>
     </el-header>
     <el-main>
-        <List class="list" :list="list"></List>
+        <List  :list="list"></List>
     </el-main>
     <el-footer>
-        <Todoinput @add="onaddtask" class="input"></Todoinput>
+        <Input></Input>
     </el-footer>
 </template>
 
 <script>
-import Todoinput from './todoinput.vue';
 import ListHeader from './listHeader.vue';
 import List from './list.vue';
+import Input from './input.vue';
 export default {
     components: {
-        Todoinput,
-        ListHeader,
-        List
-    },
+    ListHeader,
+    List,
+    Input
+},
     data() {
         return {
             list: [
@@ -62,19 +62,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: #fff;
 }
 
-.listheader {
-    top: 0;
-    height: 100px;
-}
-
-.input {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-}
 </style>

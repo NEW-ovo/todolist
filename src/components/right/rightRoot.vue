@@ -1,6 +1,7 @@
 <template>
     <el-header>
         <ListHeader class="listheader"></ListHeader>
+        <StroeTwst></StroeTwst>
     </el-header>
     <el-scrollbar>
         <el-main>
@@ -16,12 +17,14 @@
 import ListHeader from './listHeader.vue';
 import List from './list.vue';
 import Input from './input.vue';
+import StroeTwst from '../stroeTwst.vue';
 export default {
     components: {
-        ListHeader,
-        List,
-        Input
-    },
+    ListHeader,
+    List,
+    Input,
+    StroeTwst
+},
     data() {
         return {
             list: [

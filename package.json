@@ -10,8 +10,7 @@
     "element-plus": "^2.2.14",
     "pinia": "^2.0.20",
     "react-router-dom": "^6.3.0",
-    "vue": "^3.0.4",
-    "vuex": "^4.0.2"
+    "vue": "^3.0.4"
   },
   "devDependencies": {
     "@vue/compiler-sfc": "^3.0.4",

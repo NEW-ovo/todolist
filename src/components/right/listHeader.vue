@@ -7,7 +7,7 @@
     </el-icon>
 </template>
 
-<script >
+<script setup type="moudle">
 
 </script>
 
